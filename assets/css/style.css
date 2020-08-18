@@ -673,11 +673,131 @@ li {
 .footer__under {
     display: block;
     width: 100%;
-    height: 100px;
+    height: auto;
     background: black;
     bottom: 0;
     left: 0;
     z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info__footer {
+    color: rgba(203, 203, 203, 0.34);
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.pay_system_icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .pay_system_icons {
+        margin-left: 70px;
+    }
+}
+
+.pay__ico {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+.ico__item {
+    height: auto;
+    width: 100%;
+}
+
+.pay__ico--master {
+    width: 50px;
+}
+
+.footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+    .footer__inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.number {
+    text-decoration: none;
+    color: rgba(255, 240, 127, 0.34);
+}
+
+.number:hover {
+    color: rgba(255, 252, 229, 0.34);
+    text-decoration: underline;
+}
+
+.othergroups {
+    text-align: justify;
+}
+
+@media (max-width: 1024px) {
+    .othergroups {
+        text-align: center;
+    }
+}
+
+.other__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .other__icons {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+.telegram {
+    height: 30px;
+    width: 30px;
+    margin-right: 50px;
+}
+
+.telegram__item {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.config {
+    margin-top: 20px;
+    border-top: 1px solid grey;
+    padding-top: 10px;
+    color: #696969;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+@media (max-width: 1024px) {
+    .config {
+        font-size: 7px;
+    }
 }
 
 /* Контейнер флип-карт - установите ширину и высоту на все, что вы хотите. Мы добавили свойство border, чтобы продемонстрировать, что сам флип выходит из коробки при наведении (удалите перспективу, если вы не хотите 3D-эффект */
